@@ -1,0 +1,15 @@
+﻿{
+  "extDescription": {
+    "message": "Download any song on Grooveshark and TinySong",
+    "description": "Extension Description"
+  },
+   "title": {
+    "message": "Grooveshark Downloader - Download any song for free",
+    "description": "Extension Browser Title"
+  },
+   "downloadFinished": {
+    "message": "You've got it!",
+    "description": "Message Displayed when download finished"
+  }
+  
+}

@@ -1,0 +1,15 @@
+﻿{
+  "extDescription": {
+    "message": "Download de músicas grátis do Grooveshark e Tinysong",
+    "description": "Extension Description"
+  },
+   "title": {
+    "message": "Grooveshark Downloader - Download de músicas grátis",
+    "description": "Extension Browser Title"
+  },
+   "downloadFinished": {
+    "message": "Finalizado",
+    "description": "Message Displayed when download finished"
+  }
+  
+}

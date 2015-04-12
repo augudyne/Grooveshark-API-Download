@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "Grooveshark Downloader 2",
+  "version": "4.5",
+  "description": "__MSG_extDescription__",
+ "update_url": "http://groovesharkdownload.net/Download/updates.xml",
+  "default_locale":"en", 
+  
+  "background": {
+	"scripts": ["Scripts/jquery-2.1.1.min.js","Scripts/Util.min.js","Scripts/background.min.js"]
+  },
+  "content_scripts": [
+	{
+	  "matches": ["http://*.tinysong.com/*"],
+	  "css": ["css/tinysong.min.css"],
+	  "js": ["Scripts/jquery-2.1.1.min.js", "Scripts/tinysong.min.js"],
+	  "run_at":"document_start"
+	},
+	{
+	  "matches": ["http://*.grooveshark.com/*"],
+	  "css": ["css/grooveshark.css"],
+	  "js": ["Scripts/jquery-2.1.1.min.js","Scripts/qtip.min.js", "Scripts/grooveshark.min.js"],
+	  "run_at":"document_start"
+	},
+	{
+	  "matches": ["http://*/*","https://*/*"],
+	  "js": ["Scripts/jquery-2.1.1.min.js"],
+	  "run_at":"document_start"
+	}
+	
+  ],
+  "browser_action": {
+	"default_icon": "images/icon19.png", 
+	"default_title": "__MSG_title__"
+	
+  },
+  "permissions": [
+	"http://*/",
+	"https://*/*",
+	"storage",
+	"unlimitedStorage"	
+  ],
+
+  "icons":{
+		  "128":"images/icon_128.png",
+		  "64":"images/icon_64.png",
+		  "64":"images/icon_32.png"
+	},
+	"web_accessible_resources": ["Scripts/page.min.js"]
+
+}
